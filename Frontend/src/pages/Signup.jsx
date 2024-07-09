@@ -25,7 +25,7 @@ const Signup = () => {
     }, [])
 
     return (
-        <div className="max-md:flex max-md:flex-col max-md:gap-8 font-customFont font-bold">
+        <div className="max-md:flex max-md:flex-col max-md:gap-8 font-customFont font-semibold">
             <div>
                 <img src={logo} alt="logo" className="mx-auto w-[30%] max-md:w-[50%] mt-2" />
             </div>
