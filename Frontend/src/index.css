@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.spinner {
+    width: 76px;
+    height: 76px;
+    display: grid;
+    border-radius: 50%;
+    -webkit-mask: radial-gradient(farthest-side, #0000 40%, #005d6c 41%);
+    background: linear-gradient(0deg, rgba(0, 93, 108, 0.5) 50%, rgba(0, 93, 108, 1) 0) center/4.5px 100%,
+        linear-gradient(90deg, rgba(0, 93, 108, 0.25) 50%, rgba(0, 93, 108, 0.75) 0) center/100% 4.5px;
+    background-repeat: no-repeat;
+    animation: spinner-d3o0rx 1s infinite steps(12);
+}
+
+.spinner::before,
+.spinner::after {
+    content: "";
+    grid-area: 1/1;
+    border-radius: 50%;
+    background: inherit;
+    opacity: 0.915;
+    transform: rotate(30deg);
+}
+
+.spinner::after {
+    opacity: 0.83;
+    transform: rotate(60deg);
+}
+
+@keyframes spinner-d3o0rx {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.iconify {
+    color: #ffffff;
+}
+
+.rhap_progress-filled {
+    background-color: #03073E;
+}
+
+.rhap_volume-filled {
+    background-color: #03073E;
+}
+
+.rhap_progress-indicator {
+    background-color: #03073E;
+}
+
+.rhap_volume-indicator {
+    background-color: #03073E;
+}
+
+.rhap_time {
+    color: white;
+    font-weight: bold;
+}
+
+.spinnerMusic {
+    animation: rotate infinite 2s linear;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
