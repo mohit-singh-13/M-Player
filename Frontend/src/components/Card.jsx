@@ -33,7 +33,7 @@ const Card = ({song}) => {
                     <p className="text-[13px] font-customFont">{artistName}</p>
                 </div>
 
-                <div className="relative w-[40%] flex flex-col justify-center hover:text-white transition-all duration-100 group"
+                <div className="h-[40px] relative w-[40%] flex flex-col justify-center hover:text-white transition-all duration-100 group"
                 onClick={() => {
                     setSong(song);
                     navigate("/player");
