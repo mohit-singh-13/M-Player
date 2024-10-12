@@ -1,3 +1,4 @@
+# M-Player
 - Created a web application with free trail of Apple Music API.
 - Users can search and listen songs. Since API is paid, so for now, users can only listen every song for just 30 seconds.
 - Created very basic backend using Node.js and Express.js with very basic user registration and authentication feature where we use MongoDB Atlas to store user information.
